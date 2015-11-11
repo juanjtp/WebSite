@@ -1,3 +1,53 @@
-.logonav{
-	margin-bottom: 1em;
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+#logoimg{
+	margin-top: -20%;
+}
+header{
+	background-image: url(../img/arizona.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #00ff87;
+}
+#govir-intro{
+    font-family: 'Lobster';
+    margin-bottom: 4%;
+    font-size: 800%;
+    text-transform: none;
+}
+#govir-subintro{
+	font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  #govir-intro {
+    font-size: 500%;
+  }
+  #govir-subintro{
+	font-size: 1em;
+}
+}
+.logoserv > img{
+	width: 100%;
+}
+.logonos > img{
+	width: 65%;
+}
+.logomiembros > img{
+	width: 70%;
+}
+section#contact {
+    background-color: #222;
+    background-image: url(../img/streets.jpg);
+    background-position: center center;
+    background-repeat: none;
+     webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.contactexto > h3{
+	color: #fff;
 }

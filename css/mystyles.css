@@ -3,23 +3,29 @@
 	margin-top: -20%;
 }
 header{
-	background-image: url(../img/arizona.png);
+	background-image: url(../img/fondo_uni.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: #00ff87;
+    color: yellow;
+}
+.navbar-default{
+	background-color: rgba(0,0,0,0.2);
 }
 #govir-intro{
     font-family: 'Lobster';
     margin-bottom: 4%;
     font-size: 800%;
     text-transform: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
+
 #govir-subintro{
 	font-size: 1.5em;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 @media (max-width: 768px) {
   #govir-intro {

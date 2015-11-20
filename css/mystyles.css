@@ -57,3 +57,13 @@ section#contact {
 .contactexto > h3{
 	color: #fff;
 }
+
+::-moz-selection {
+    text-shadow: none;
+    background: rgba(0,0,0,0.6) none repeat scroll 0% 0%;
+}
+
+::selection {
+    text-shadow: none;
+    background: rgba(0,0,0,0.6) none repeat scroll 0% 0%;
+}

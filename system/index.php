@@ -40,28 +40,117 @@
     <section class="container login-form">
         <form method="post" action="" role="login">
             <section>
-                <h4 class="text-center">Sistema de noticias</h4>
-                <img src="assets/images/EscudoUson.png" width="100px" class="img-responsive">
+                <h4 class="text-center">Usuarios</h4>
                 
+                <div>
+                <input type="button">
+                </div>
+
+                   <div>
+                        <form method="GET" action="" onSubmit="return validarForm(this);" >
+                            <center>
+                        <div class="form-group pull-right">
+                        <div class="col-md-10"> 
+                        <input type="text" placeholder="" name="palabra" class="form-control input">
+                   </div>
+                 <div class="col-md-2">
+                 <input type="submit" value="Buscar" name="buscar" class="btn btn-primary btn-md">
+                  </div>
+                </div>
                 
+                <br><br>
+                <?php include('buscador.php'); ?>
+                        </center>
+                        </form>
+                   </div> 
+                    <div>
+
+                    </div>
         
-                <div class="form-group">
-                    <input type="text" name="user" placeholder="Nombre de usuario" required class="form-control input-lg" />
-                </div>
-                <div class="form-group">
-                    <input type="password" name="password" placeholder="Contraseña" required class="form-control input-lg" />
-                </div>
-                
-                <!--<a href="#">¿Olvidaste tu contraseña?</a>-->
-                <br>
-                
-                <button type="submit" name="submit" class="btn btn-lg btn-block btn-success">Iniciar Sesión</button>
+             
             </section>
         </form>
 
         
     </section>
    
+   <div>
+       <?php 
+        $registros=28;
+        @$pagina = $_GET ['pagina'];
+
+        if (!isset($pagina))
+        {
+          $pagina = 1;
+          $inicio = 0;
+        }
+        else
+        {
+          $inicio = ($pagina-1) * $registros;
+        } 
+        $result = "SELECT * FROM maestros ORDER BY name asc limit ".$inicio." , ".$registros." ";
+        $cad = mysqli_query($conn,$result) or die ( 'error al listar, $pegar' .mysqli_error($conn)); 
+  //calculamos las paginas a mostrar
+
+        $contar = "SELECT * FROM maestros";
+        $contarok = mysqli_query($conn, $contar);
+        $total_registros = mysqli_num_rows($contarok);
+//$total_paginas = ($total_registros / $registros);
+        $total_paginas = ceil($total_registros / $registros); 
+
+
+        while ($row = mysqli_fetch_array($cad)) {
+          ?>
+          <tr> 
+           <td align="center"><b><p><?php echo $row['name'] ?></p></b> </td>
+           <td align="center"><b><?php echo $row['email'] ?></b></td>
+           <td align="center"><b><p><?php echo $row['cubiculo'] ?></p></b> </td>
+         </tr>    
+         
+         <?php   
+       }
+       
+       echo "<center><p>";
+
+       if($total_registros>$registros){
+        if(($pagina - 1) > 0) {
+          echo "<span class='pactiva' ><a href='?pagina=".($pagina-1)."' style='color:blue'>&laquo; Anterior</a></span> ";
+        }
+// Numero de paginas a mostrar
+        $num_paginas=10;
+//limitando las paginas mostradas
+        $pagina_intervalo=ceil($num_paginas/2)-1;
+
+// Calculamos desde que numero de pagina se mostrara
+        $pagina_desde=$pagina-$pagina_intervalo;
+        $pagina_hasta=$pagina+$pagina_intervalo;
+
+// Verificar que pagina_desde sea negativo
+if($pagina_desde<1){ // le sumamos la cantidad sobrante para mantener el numero de enlaces mostrados $pagina_hasta-=($pagina_desde-1); $pagina_desde=1; } // Verificar que pagina_hasta no sea mayor que paginas_totales if($pagina_hasta>$total_paginas){
+  $pagina_desde-=($pagina_hasta-$total_paginas);
+  $pagina_hasta=$total_paginas;
+  if($pagina_desde<1){
+    $pagina_desde=1;
+  }
+}
+
+for ($i=$pagina_desde; $i<=$pagina_hasta; $i++){
+  if ($pagina == $i){
+    echo "<span class='pnumero' style='color:black' >".$pagina."</span> ";
+  }else{
+    echo "<span class='active' ><a style='color:blue' href='?pagina=$i'>$i</a></span> ";
+  }
+}
+
+if(($pagina + 1)<=$total_paginas) {
+  echo " <span class='pactiva'><a style='color:blue' href='?pagina=".($pagina+1)."'>Siguiente &raquo;</a></span>";
+}
+}
+
+echo "</p></center>";
+?>
+
+   </div>
   
 </body>
 

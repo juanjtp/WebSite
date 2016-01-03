@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+body{
+	margin-top: 5%;
+	background-image: url(../img/roads.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #cc0;
+}
+input[type="text"] {
+    width: inherit;
+}
+input[type="password"] {
+    width: inherit;
+}

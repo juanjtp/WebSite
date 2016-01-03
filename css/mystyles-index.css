@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+#logoimg{
+	margin-top: -20%;
+}
+header{
+	background-image: url(../img/fondo_uni.png);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: yellow;
+}
+.navbar-default{
+	background-color: rgba(0,0,0,0.2);
+}
+#govir-intro{
+    font-family: 'Lobster';
+    margin-bottom: 4%;
+    font-size: 800%;
+    text-transform: none;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#govir-subintro{
+	font-size: 1.5em;
+	text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
+@media (max-width: 768px) {
+  #govir-intro {
+    font-size: 500%;
+  }
+  #govir-subintro{
+	font-size: 1em;
+}
+}
+.logoserv > img{
+	width: 100%;
+}
+.logonos > img{
+	width: 65%;
+}
+.logomiembros > img{
+	width: 70%;
+}
+section#contact {
+    background-color: #222;
+    background-image: url(../img/streets.jpg);
+    background-position: center center;
+    background-repeat: none;
+     webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.contactexto > h3{
+	color: #fff;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: rgba(0,0,0,0.6) none repeat scroll 0% 0%;
+}
+
+::selection {
+    text-shadow: none;
+    background: rgba(0,0,0,0.6) none repeat scroll 0% 0%;
+}

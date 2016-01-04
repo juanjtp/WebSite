@@ -1,16 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 body{
 	margin-top: 5%;
-	background-image: url(../img/roads.jpg);
+	background-image: url(../img/arizona.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: #cc0;
 }
-input {
+input[type="text"],input[type="password"]{
     width: inherit;
     color: gray;
+}
+#contenido{
+	border: 1em solid #cc0;
+	background-color: white;
+	border-radius: 2em;
+	margin-top: 15%;
+	margin-bottom: 5%;
+	width: 50%;
+	padding: 3% 0%;
 }

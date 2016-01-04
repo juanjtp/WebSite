@@ -34,31 +34,32 @@
     </script>
 </head>
 <body>
-
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 text-center">
-			<h1>Iniciar sesion</h1>
+	<div class="container" id="contenido">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h1>Iniciar sesión</h1>
+			</div>
 		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2 text-center">
-			<form name="login">
-				<div class="row"> 
-					<div class="col-md-8 col-md-offset-2">
-						<input type="text" name="userid" placeholder="Usuario"/>
+		<br>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<form name="login">
+					<div class="row"> 
+						<div class="col-md-10 col-md-offset-1">
+							<input type="text" name="userid" placeholder="Usuario"/>
+						</div>
 					</div>
-				</div>
-				<br>
-				<div class="row"> 
-					<div class="col-md-8 col-md-offset-2">
-						<input type="password" name="pswrd" placeholder="Contraseña"/>
+					<br>
+					<div class="row"> 
+						<div class="col-md-10 col-md-offset-1">
+							<input type="password" name="pswrd" placeholder="Contraseña"/>
+						</div>
 					</div>
-				</div>
-				<br>
-	            <input type="button" onclick="check(this.form)" value="Login"/>
-	            <input type="reset" value="Cancel"/>
-	        </form>
+					<br>
+		            <input type="button" onclick="check(this.form)" value="Login"/>
+		            <input type="reset" value="Cancel"/>
+		        </form>
+			</div>
 		</div>
 	</div>
 </body>

@@ -12,8 +12,21 @@ header{
     -o-background-size: cover;
     color: yellow;
 }
+.fixed-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    max-width: 800px;
+    max-height: 800px;
+    top: 1%;
+}
 .navbar-default{
 	background-color: rgba(0,0,0,0.2);
+}
+.carousel-inner img{
+    width: 100%;
 }
 #govir-intro{
     font-family: 'Lobster';

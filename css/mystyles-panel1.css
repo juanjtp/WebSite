@@ -1,4 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+body{
+	margin: 3%;
+	background-color: #909;
+	color: white;
+}
+
 .ul-lista{
+	display: block;
 	
+}
+.ul-lista li{
+	background: gray;
+    margin: 1%;
+}
+.color{
+	background-color: red;
+}
+.map-container{
+	position: relative;
+	padding-bottom: 60%;
+	padding-top: 35px;
+	height: 0px;
+	overflow: hidden;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.panel{
+	background-color: black;
 }

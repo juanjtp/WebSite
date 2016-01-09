@@ -41,12 +41,26 @@ header{
 	text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 }
 @media (max-width: 768px) {
-  #govir-intro {
-    font-size: 500%;
-  }
-  #govir-subintro{
-	font-size: 1em;
+    #govir-intro {
+        font-size: 500%;
+    }
+    #govir-subintro{
+        font-size: 1em;
+    }
 }
+@media (max-width: 500px) {
+    #govir-intro {
+        font-size: 340%;
+    }
+    #govir-subintro{
+        font-size: 0.9em;
+    }
+    .intro-text{
+        margin-top: -13%;
+    }
+    #vemas-btn{
+        visibility: hidden
+    }
 }
 .logoserv > img{
 	width: 100%;

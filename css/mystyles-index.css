@@ -10,7 +10,10 @@ header{
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: yellow;
+    color: rgb(150,255,10);
+}
+a{
+    color: rgb(80,154,59);
 }
 .fixed-logo {
     position: absolute;
@@ -21,6 +24,27 @@ header{
     max-width: 800px;
     max-height: 800px;
     top: 1%;
+}
+#vemas-btn{
+    background-color: rgb(80,154,59);
+    border-color: rgb(80,154,59);
+}
+::-moz-selection {
+    text-shadow: none;
+    background: rgb(80,154,59);
+}
+
+::selection {
+    text-shadow: none;
+    background: rgb(80,154,59);
+}
+.parrafo p{
+    font-size: 1.2em;
+    
+}
+#paragraph{
+    margin-top: -2em;
+    margin-bottom: 4%;
 }
 .navbar-default{
 	background-color: rgba(0,0,0,0.2);
@@ -93,4 +117,42 @@ section#contact {
 ::selection {
     text-shadow: none;
     background: rgba(0,0,0,0.6) none repeat scroll 0% 0%;
+}
+
+/*navbar*/
+.navbar-default .navbar-nav > .active > a {
+    background-color: rgb(80,154,59);
+}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: rgb(80,154,59);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: rgb(80,154,59);
+}
+.navbar-default .navbar-toggle {
+    border-color: rgb(80,154,59);
+    background-color: rgb(80,154,59);
+}
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #FFF;
+    background-color: rgba(80,154,59,0.5);
+}
+/*Portfolio*/
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(80,154,59,.8);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+.btn-primary {
+    border-color: rgb(80,154,59);
+    background-color: rgb(80,154,59);
 }

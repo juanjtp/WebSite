@@ -15,7 +15,7 @@ a{
 }
 a:hover{
     color: rgb(42,78,32);
-    background-color: rgb(42,78,32);
+    background-color: rgba(42,78,32,0.2);
 }   
 .navbar-brand img{
     max-width: 100%;
@@ -128,6 +128,9 @@ a:hover{
 }
 .logomiembros > img{
 	width: 70%;
+}
+#services{
+    background-color: rgba(51,102,255,0.2);
 }
 section#contact {
     background-color: #222;

@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
-#logoimg{
-	margin-top: -20%;
-}
+
 header{
 	background-image: url(../img/fondo_uni.png);
     background-position: center center;
@@ -15,24 +13,59 @@ header{
 a{
     color: rgb(80,154,59);
 }
-.fixed-logo {
+a:hover{
+    color: rgb(42,78,32);
+    background-color: rgb(42,78,32);
+}   
+.navbar-brand img{
+    max-width: 100%;
+    max-height: 300%;
+}
+#logoimg{
+    margin-top: -13%;
+}
+
+.fixed-logo{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0px;
     right: 0px;
-    max-width: 800px;
-    max-height: 800px;
-    top: 1%;
+    max-width: 40%;
+    max-height: 40%;
+    top: 35%;
 }
-#vemas-btn{
-    background-color: rgb(80,154,59);
-    border-color: rgb(80,154,59);
+.fixed-logo  img{
+    margin-bottom: 18%;
 }
-::-moz-selection {
-    text-shadow: none;
-    background: rgb(80,154,59);
+@media (max-width: 768px) {
+    .navbar-brand img{
+        max-height: 200%;
+    }
+    #logoimg{
+        margin-top: -10%;
+    }
+    .fixed-logo{
+        top: 25%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40%;
+        max-height: 40%;
+        left: 0px;
+        right: 0px;
+    }
+    #vemas-btn{
+        visibility: hidden;
+    }
 }
+@media (max-width: 320px) {
+    .fixed-logo{top: 10%}
+}
+#govirlogo img{
+    width: 50%;
+}
+
 
 ::selection {
     text-shadow: none;
@@ -85,6 +118,7 @@ a{
     #vemas-btn{
         visibility: hidden
     }
+
 }
 .logoserv > img{
 	width: 100%;
@@ -155,4 +189,16 @@ section#contact {
 .btn-primary {
     border-color: rgb(80,154,59);
     background-color: rgb(80,154,59);
+}
+.btn{
+    background-color: rgb(80,154,59);
+    border-color: rgb(80,154,59);
+}
+.btn:hover{
+    background-color: rgb(42,78,32);
+    border-color: rgb(42,78,32);
+}
+::-moz-selection {
+    text-shadow: none;
+    background: rgb(80,154,59);
 }

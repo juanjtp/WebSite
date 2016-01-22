@@ -197,11 +197,11 @@ section#contact {
     background-color: rgb(80,154,59);
     border-color: rgb(80,154,59);
 }
-.btn:hover{
+.btn:hover, .social-buttons:hover{
     background-color: rgb(42,78,32);
     border-color: rgb(42,78,32);
 }
 ::-moz-selection {
     text-shadow: none;
-    background: rgb(80,154,59);
+    background: rgba(80,154,59,0.5);
 }

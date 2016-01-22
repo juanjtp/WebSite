@@ -13,7 +13,7 @@ header{
 a{
     color: rgb(80,154,59);
 }
-a:hover{
+a:hover, a:focus{
     color: rgb(42,78,32);
     background-color: rgba(42,78,32,0.2);
 }   
@@ -197,9 +197,12 @@ section#contact {
     background-color: rgb(80,154,59);
     border-color: rgb(80,154,59);
 }
-.btn:hover, .social-buttons:hover{
+.btn:hover, .btn:focus, .btn:active, .btn.active, .open .dropdown-toggle.btn-xl{
     background-color: rgb(42,78,32);
     border-color: rgb(42,78,32);
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active{
+    background-color: rgb(80,154,59);
 }
 ::-moz-selection {
     text-shadow: none;

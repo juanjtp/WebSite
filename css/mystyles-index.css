@@ -9,13 +9,6 @@ header{
     background-size: cover;
     -o-background-size: cover;
     color: rgb(150,255,10);
-}
-a{
-    color: rgb(80,154,59);
-}
-a:hover, a:focus{
-    color: rgb(42,78,32);
-    background-color: rgba(42,78,32,0.2);
 }   
 .navbar-brand img{
     max-width: 100%;
@@ -24,7 +17,9 @@ a:hover, a:focus{
 #logoimg{
     margin-top: -13%;
 }
-
+.modal-body a{
+    font-weight: bold;
+}
 .fixed-logo{
     position: absolute;
     margin-left: auto;
@@ -188,23 +183,4 @@ section#contact {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-}
-.btn-primary {
-    border-color: rgb(80,154,59);
-    background-color: rgb(80,154,59);
-}
-.btn{
-    background-color: rgb(80,154,59);
-    border-color: rgb(80,154,59);
-}
-.btn:hover, .btn:focus, .btn:active, .btn.active, .open .dropdown-toggle.btn-xl{
-    background-color: rgb(42,78,32);
-    border-color: rgb(42,78,32);
-}
-ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active{
-    background-color: rgb(80,154,59);
-}
-::-moz-selection {
-    text-shadow: none;
-    background: rgba(80,154,59,0.5);
 }

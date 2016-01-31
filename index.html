@@ -82,8 +82,19 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <!--Header & carousel-->
-    <div ng-include="'partials/headernCarousel.html'"></div>
+    <!--Carousel-->
+    <div ng-include="'partials/Carousel.html'"></div>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="fixed-logo col-md-3">
+                <img src="img/govir-logo.jpg" class="img-responsive img-circle"/>
+                <a href="#services" class="page-scroll btn btn-xl" id="vemas-btn">Ve más!</a>            
+                <!--<div class="intro-heading" id="govir-intro">GoVir</div>
+                <div class="intro-lead-in" id="govir-subintro">Recorriendo caminos juntos.</div>-->
+            </div>
+        </div>
+    </header>
     <!-- Services Section -->
     <div ng-include="'partials/services.html'"></div>
     <!-- Portfolio Grid Section -->
@@ -96,34 +107,9 @@
     <div ng-include="'partials/contact.html'"></div>
     <!--Footer-->
     <div ng-include="'partials/footer.html'"></div>
-    <!-- Esto ya estaba aqui-->
-    <!-- Clients Aside 
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>-->
+
+    <!-- Scripts -->
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
